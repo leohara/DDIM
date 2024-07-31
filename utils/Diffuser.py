@@ -74,7 +74,7 @@ class DDIMDiffuser(DDPMDiffuser):
     def __init__(self, num_timesteps=1000, beta_start=0.0001, beta_end=0.02, device='cpu'):
         super().__init__(num_timesteps, beta_start, beta_end, device)
 
-    def sample(self, model, x_shape=(20, 1, 28, 28), ddim_steps=1000):
+    def sample(self, model, x_shape=(20, 1, 28, 28), ddim_steps=50):
         batch_size = x_shape[0]
         x = torch.randn(x_shape, device=self.device)
         ddim_timesteps = torch.linspace(0, self.num_timesteps-1, ddim_steps, dtype=torch.long, device=self.device)
