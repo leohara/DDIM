@@ -36,4 +36,15 @@ NVIDIA RTX A3000 8GB
 
 <div style="text-align:center"><img src="./ddim_images/generated_images.png" /></div>
 
+<div align="center">
+  
+| Step | 50 | 100 | 500 | 1000 |
+| :--: | :--: | :--: | :--: | :--: |
+| DDPM FID | - | - | - | 39.17 |
+| DDPM time | - | - | - | 3:26:49 |
+| DDIM FID | 49.83 | 48.75 | 49.32 | 46.612 |
+| DDIM time | 0:07:31 | 0:19:35 | 1:29:29 | 2:24:45 |
+
+</div>
+
 ## Reference
