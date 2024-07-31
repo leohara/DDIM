@@ -11,8 +11,8 @@ from utils.lib import load_model, train_model, generate_samples
 from utils.FID import calculate_fid_for_dataset_and_generated_images
 
 if __name__ == "__main__":
-    model_dir = './fashion_ddpm_models'
-    image_dir = './fashion_ddpm_images'
+    model_dir = './ddpm_models'
+    image_dir = './ddpm_images'
     batch_size = 128
     num_timesteps = 1000
     epochs = 100
