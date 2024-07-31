@@ -32,4 +32,8 @@ NVIDIA RTX A3000 8GB
 
 ## Result
 
+<div style="text-align:center"><img src="./ddpm_images/generated_images.png" /></div>
+
+<div style="text-align:center"><img src="./ddim_images/generated_images.png" /></div>
+
 ## Reference
