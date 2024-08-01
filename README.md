@@ -7,6 +7,12 @@
 ## Summary of the Paper
 The paper presents Denoising Diffusion Implicit Models (DDIMs), an advancement over Denoising Diffusion Probabilistic Models (DDPMs) for image generation. DDIMs maintain the same training procedure as DDPMs but introduce non-Markovian diffusion processes, enabling faster sampling and producing high-quality images. DDIMs can generate samples 10× to 50× faster than DDPMs, offering a trade-off between computation and sample quality. 
 
+## The Technical Core
+**Accelerated Sampling**: The paper presents methods for significantly accelerating the sampling process. By choosing appropriate sub-sequences and variance hyperparameters, the authors demonstrate that DDIMs can produce high-quality samples in far fewer steps compared to traditional DDPMs, achieving speedups of 10× to 100×.
+
+**Innovative Methodology**: The introduction of a non-Markovian forward diffusion process and the concept of implicit probabilistic models represent significant advancements in the field of generative modeling. These innovations provide new avenues for research and application.
+
+
 ## What I implemented
 - Both DDPM and DDIM Diffuser from scratch.
   - I defined the Diffuser class of DDPM first and implemented DDIM by inheriting that class.
